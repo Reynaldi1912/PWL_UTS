@@ -8,9 +8,10 @@ use Illuminate\Foundation\Auth\Barang as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model; //Model Eloquent
 
-class Mahasiswa extends Model
+class Barang extends Model
 {
     protected $table = 'Barang';
+    public $timestamps= false; 
     protected $primaryKey = 'id_barang';
 
     protected $fillable = [
