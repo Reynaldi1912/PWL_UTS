@@ -125,7 +125,7 @@ class BarangController extends Controller
     {
         //fungsi eloquent untuk menghapus data
         barang::find($id)->delete();
-        return redirect()->route('index')
+        return redirect()->route('barang.index')
         -> with('success', 'Barang Berhasil Dihapus');
     }
 }
