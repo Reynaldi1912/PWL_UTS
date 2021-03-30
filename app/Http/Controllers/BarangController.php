@@ -17,7 +17,6 @@ class BarangController extends Controller
      */
     public function index(Request $request)
     {
-        // ,'kode_barang','katgeori_barang'
         $barang = barang::where([
             ['id_barang','!=',Null],
             [function($query)use($request){
@@ -29,7 +28,7 @@ class BarangController extends Controller
             }]
         ])
         ->orderBy('id_barang','desc') 
-        ->simplePaginate(20);    
+        ->simplePaginate(10);    
         return view('index' , compact('barang'));
     }
 
