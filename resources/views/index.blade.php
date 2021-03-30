@@ -71,3 +71,5 @@
  @endforeach
 </table>
 
+{{ $barang->links() }}
+
