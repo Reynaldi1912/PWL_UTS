@@ -60,12 +60,13 @@
         <td>{{ $br->harga}}</td>
         <td>{{ $br->qty }}</td>
         <td>
-            <form action="{{ route('barang.destroy',$br->id_barang) }}" method="POST">
-            <a class="btn btn-info" href="{{ route('barang.show',$br->id_barang) }}">Show</a>
-            <a class="btn btn-primary" href="{{ route('barang.edit',$br->id_barang) }}">Edit</a>
-            @csrf
-            @method('DELETE')
+            <form action="{{ route('barang.destroy', $br->id_barang) }}" method="POST">
+                <a class="btn btn-info" href="{{ route('barang.show',$br->id_barang) }}">Show</a>
+                <a class="btn btn-primary" href="{{ route('barang.edit',$br->id_barang) }}">Edit</a>
+                @csrf
+                @method('DELETE')
              <button type="submit" class="btn btn-danger">Delete</button>
+             </form>
         </td>
     </tr>
  @endforeach
