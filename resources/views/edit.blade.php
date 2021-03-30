@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="kode_barang">Kode Barang</label> 
-                    <input type="text" name="kode_barang" class="form-control" id="kode_barang" value="{{ $barang->kode-barang }}" aria-describedby="kode_barang" > 
+                    <input type="text" name="kode_barang" class="form-control" id="kode_barang" value="{{ $barang->kode_barang }}" aria-describedby="kode_barang" > 
                 </div>
                 <div class="form-group">
                     <label for="nama_barang">Nama Barang</label>  
